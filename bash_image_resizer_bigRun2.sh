@@ -15,8 +15,8 @@
 ### OPTIONS
 OVERWRITE_ORIGINAL_FILE=false
 TARGET_RESOLUTION=1920
-SOURCE_PIC_DIR='/mnt/d/temp/company_photos_dump2022.12'
-DESTINATION_PIC_DIR='/mnt/d/temp/small/test1'
+SOURCE_PIC_DIR='/mnt/f/Pers/Photo'
+DESTINATION_PIC_DIR='/mnt/f/Pers/small'
 # space separated extensions, case-sensitive. ie "JPG jpg jpeg"
 ELIGIBLE_PIC_EXTENSIONS='PNG JPG JPEG png jpg jpeg'     
 ELIGIBLE_PIC_EXTENSIONS_REGEX='PNG\|JPG\|JPEG\|png\|jpg\|jpeg' # MUST BE THE SAME AS ABOVE!     
@@ -52,7 +52,6 @@ welcome_prompt() {
     read -n 1 -r -s -p $'Press enter to continue...\n'
 }
 
-# DEFINITIONS
 main() {
     clear
     cd $SOURCE_PIC_DIR
